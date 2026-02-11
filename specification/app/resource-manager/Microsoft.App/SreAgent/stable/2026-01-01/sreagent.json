@@ -1438,7 +1438,7 @@
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/agents/{agentName}/dailyUsages": {
-      "post": {
+      "get": {
         "operationId": "Agents_DailyUsages",
         "tags": [
           "Agents"
@@ -1481,9 +1481,6 @@
           "Agents_DailyUsages": {
             "$ref": "./examples/Agents_DailyUsages.json"
           }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
         }
       }
     },
@@ -1665,7 +1662,7 @@
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/agents/{agentName}/usages": {
-      "post": {
+      "get": {
         "operationId": "Agents_Usages",
         "tags": [
           "Agents"
@@ -1708,9 +1705,6 @@
           "Agents_Usages": {
             "$ref": "./examples/Agents_Usages.json"
           }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
         }
       }
     }
@@ -2981,7 +2975,10 @@
           "description": "The URI that can be used to request the next list of usage records.",
           "readOnly": true
         }
-      }
+      },
+      "required": [
+        "value"
+      ]
     },
     "UsageInfo": {
       "type": "object",

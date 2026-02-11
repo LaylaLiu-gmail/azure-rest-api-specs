@@ -260,7 +260,7 @@ model UsageCollection {
    * The list of usage records.
    */
   @pageItems
-  value?: UsageInfo[];
+  value: UsageInfo[];
 
   /**
    * The URI that can be used to request the next list of usage records.
